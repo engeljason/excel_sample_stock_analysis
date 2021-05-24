@@ -119,10 +119,10 @@ Sub StockAnalysis()
                     Set stkMostVolume = kStock
                     first = False
                 Else
-                    If tchange > stkMostGain.TotalChange Then
+                    If pchange > stkMostGain.PercentChange Then
                         Set stkMostGain = kStock
                     End If
-                    If tchange < stkMostLoss.TotalChange Then
+                    If pchange < stkMostLoss.PercentChange Then
                         Set stkMostLoss = kStock
                     End If
                     If tvolume > stkMostVolume.Volume Then
